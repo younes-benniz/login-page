@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    $('.register').hide();
+    $('#register').click(function(){
+        $('.login').hide();
+        $('.register').show();
+    });
+    $('#login').click(function(){
+        $('.register').hide();
+        $('.login').show();
+    });
+});

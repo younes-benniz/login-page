@@ -5,37 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page</title>
     
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="/jquery/jquery.js"></script>
-    <script src="/bootstrap/bootstrap.min.js"></script>
+
 </head>
 <body>
-    
-
+<section class="login">
     <div class="container">
         <div class="row">
             <div class="login-box">
                 <div class="login-title mb-4">
-                    <h1>Log in</h1>
+                    <h1 class="text-center">Log in</h1>
                 </div>
                 <div class="login-form">
-                        <form>
-                            <div class="form-group">
-                                <label class="form-control-label">Email</label>
-                                <input type="text" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-control-label">password</label>
-                                <input type="password" class="form-control" required>
-                                <p><a href="#">Forgot the password?</a></p>
-                            </div>
-                                    <button type="submit" class="btn btn-success">Log in</button>
-                                    <h6 class="text-center p-3">Don't have an account? <a href="#">Register here</a></h6>
-                        </form>
+                    <form>
+                        <div class="form-group">
+                            <label class="form-control-label">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control-label">password</label>
+                            <input type="password" class="form-control" required>
+                            <p><a href="#">Forgot the password?</a></p>
+                        </div>
+                        <button type="submit" class="btn btn-success">Log in</button>
+                        <h6 class="text-center p-3">Don't have an account? <a href="#" id="register">Register here</a></h6>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+</section>
+<section class="register">
+    <div class="container">
+        <div class="row">
+            <div class="login-box">
+                <div class="login-title mb-4">
+                    <h1 class="text-center">Register</h1>
+                </div>
+                <div class="login-form">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-control-label">Full Name</label>
+                            <input type="text" class="form-control" required placeholder="You Full Name here..">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control-label">Email</label>
+                            <input type="email" class="form-control" required placeholder="Email...">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control-label">password</label>
+                            <input type="password" class="form-control" required placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="accept">
+                            <label class="form-check-label" for="accept">
+                              I accept <b>Terms of use</b>.
+                            </label>
+                          </div>
+                        <button type="submit" class="btn btn-success">Register</button>
+                        <h6 class="text-center p-3">Have an account? <a href="#" id="login">Log In now</a></h6>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
